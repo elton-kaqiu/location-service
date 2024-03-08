@@ -1,4 +1,4 @@
-package com.cacttus.locationservice.infrastrucutures;
+package com.cacttus.locationservice.infrastrucutures.services;
 
 import java.util.List;
 

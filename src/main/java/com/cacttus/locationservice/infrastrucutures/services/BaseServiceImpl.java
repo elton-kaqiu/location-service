@@ -1,4 +1,4 @@
-package com.cacttus.locationservice.infrastrucutures;
+package com.cacttus.locationservice.infrastrucutures.services;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RequiredArgsConstructor
-public abstract class BaseService<T, ID> implements Serviceable<T, ID> {
+public abstract class BaseServiceImpl<T, ID> implements BaseService<T, ID> {
     private final JpaRepository<T, ID> repository;
 
     @Override
