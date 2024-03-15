@@ -1,5 +1,6 @@
 package com.cacttus.locationservice.entities;
 
+import com.cacttus.locationservice.infrastrucutures.helpers.HasId;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,10 +14,10 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 @Table(name = "users")
-public class User {
+public class User implements HasId<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(unique = true)
     private String username;
     private String password;

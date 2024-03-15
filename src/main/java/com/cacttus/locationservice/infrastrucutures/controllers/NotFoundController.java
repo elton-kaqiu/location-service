@@ -1,4 +1,4 @@
-package com.cacttus.locationservice.controllers;
+package com.cacttus.locationservice.infrastrucutures.controllers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

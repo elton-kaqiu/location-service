@@ -2,7 +2,7 @@ package com.cacttus.locationservice.mappers;
 
 import com.cacttus.locationservice.dtos.RoleDto;
 import com.cacttus.locationservice.entities.Role;
-import com.cacttus.locationservice.infrastrucutures.Convertable;
+import com.cacttus.locationservice.infrastrucutures.helpers.Convertable;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

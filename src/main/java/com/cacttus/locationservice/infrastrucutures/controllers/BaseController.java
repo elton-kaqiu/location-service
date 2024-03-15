@@ -1,7 +1,7 @@
 package com.cacttus.locationservice.infrastrucutures.controllers;
 
 import com.cacttus.locationservice.infrastrucutures.services.BaseService;
-import com.cacttus.locationservice.infrastrucutures.Convertable;
+import com.cacttus.locationservice.infrastrucutures.helpers.Convertable;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
