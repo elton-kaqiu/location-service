@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,6 +30,15 @@ public class User implements HasId<Long> {
     private char gender;
     private String address;
     private LocalDateTime createdAt;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Family> families;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<FamilyMember> familyMembers;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Location> locations;
 
     @ManyToOne
     @JoinColumn(name = "role_id")
